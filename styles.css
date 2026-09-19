@@ -1,0 +1,49 @@
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#24334a;background:#f3f5f9;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:1440px;margin:auto;padding:36px 32px}h1{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.045em;margin:4px 0 8px}h2{font-size:1.35rem;letter-spacing:-.025em;margin:0}p{color:#69778c;line-height:1.5;margin:8px 0}.eyebrow{font-size:.7rem;letter-spacing:.16em;font-weight:800;color:#4264b7}.page-header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-bottom:20px;border-bottom:1px solid #dce3ee}.toolbar{display:flex;gap:9px;align-items:end;flex-wrap:wrap;margin:18px 0}button,input,select{font:inherit;padding:9px 12px;border:1px solid #d6dfed;border-radius:7px;background:#fff;color:inherit}button{cursor:pointer;font-size:.8rem;font-weight:600;transition:background .15s}button:hover{background:#edf2fc}button.primary{background:#315cce;color:#fff;border-color:#315cce}button.primary:hover{background:#2347ab}button:disabled{opacity:.5;cursor:wait}input:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid #315cce;outline-offset:2px}input{width:110px}label{display:grid;gap:6px;font-size:.75rem;font-weight:600}.company-heading{display:flex;align-items:center;gap:16px;margin-top:24px}.badge{font-size:.65rem;letter-spacing:.08em;background:#e6edf9;color:#45608b;padding:6px 9px;border-radius:5px;white-space:nowrap}#source{font-size:.72rem;overflow-wrap:anywhere;max-width:1100px}#status{font-size:.83rem;color:#31569a}#status:empty,#validation:empty{display:none}#validation{color:#b32f44;background:#ffebef;padding:12px;border-radius:8px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.card{padding:20px 22px;background:#fff;border:1px solid #dce4ef;border-top:3px solid #557dde;border-radius:10px;box-shadow:0 3px 9px #24334a04}.card b{font-size:.67rem;letter-spacing:.09em;color:#566780}.card strong{display:block;font-size:1.65rem;letter-spacing:-.035em;margin:10px 0 6px;color:#315cce}.card p{font-size:.8rem;margin:0}.card.bear{border-top-color:#d48378}.card.bear strong{color:#ad6259}.card.bull{border-top-color:#469d8b}.card.bull strong{color:#287f6c}.sheet-guide{display:flex;justify-content:space-between;gap:16px;margin:16px 0 10px;font-size:.72rem;color:#69778c}.sheet-guide i{display:inline-block;width:9px;height:9px;background:#dce8ff;border:1px solid #9bb8ef;margin-right:5px;border-radius:2px}.table-wrap{overflow:auto;border:1px solid #dce3ee;border-radius:10px;background:#fff;box-shadow:0 4px 20px #24334a05}table{border-collapse:separate;border-spacing:0;width:100%;font-size:.83rem;font-variant-numeric:tabular-nums}th,td{padding:10px 16px;text-align:right;min-width:155px;border-bottom:1px solid #edf0f6}th:first-child{position:sticky;left:0;text-align:left;min-width:290px;background:#fff;z-index:1;font-weight:550}thead th,thead th:first-child{background:#243b61;color:#fff;font-size:.92rem;padding:18px 16px;font-weight:650}thead small{display:block;font-size:.63rem;font-weight:400;color:#c4d1e5;margin-top:4px}td:nth-child(2){background:#f8fafc;color:#6b7a8e;border-right:1px solid #e4eaf3}td input{width:112px;max-width:100%;text-align:right;color:#2c59ac;background:#eff5ff;border:1px solid #cfdef5;padding:6px 9px;border-radius:5px;font-size:.82rem}td:nth-child(2) input{color:#536681;background:#f0f4fa;border-color:#dce4ef}.assumption th{color:#647791;font-size:.75rem}.assumption td{padding-top:5px;padding-bottom:9px}.fill{float:right;font-size:.62rem;padding:3px 5px;margin-left:8px;color:#4264a1;background:#f4f7fd;border:0}.section-row th:first-child{background:#edf2f8;color:#4e6483;text-transform:uppercase;letter-spacing:.12em;font-size:.62rem;padding:14px 16px;border-top:10px solid #fff}.result td,.result th:first-child{background:#fff3ce;color:#775615;font-weight:650;border-bottom-color:#eee2bf}.result td:nth-child(2){background:#faf6e9}.result td.negative{color:#ad3948}tr:last-child td,tr:last-child th{border-bottom:0}.footnote{font-size:.7rem;margin-top:14px}table[data-scenario="bear"] thead th{background:#69464a}table[data-scenario="bull"] thead th{background:#245e55}@media(max-width:900px){.page-header{align-items:start;flex-direction:column;gap:0}.sheet-guide{flex-direction:column;gap:5px}.card{padding:16px}.card strong{font-size:1.25rem}}@media(max-width:600px){main{padding:22px 12px}.cards{grid-template-columns:1fr;gap:10px}.card{padding:12px 16px}.card strong{margin:5px 0}.company-heading{flex-wrap:wrap;gap:8px}th:first-child{min-width:210px}th,td{min-width:140px;padding:9px 10px}.toolbar{gap:7px}.badge{font-size:.6rem}}
+
+/* Black canvas, white metric labels, charcoal data, and gold valuation bands. */
+:root{background:#000;color:#eceef2;color-scheme:dark}
+p,.sheet-guide{color:#a5a9b1}.eyebrow{color:#d2af57}.page-header{border-color:#303236}
+button,input,select{background:#25272b;color:#eef0f4;border-color:#494c53}button:hover{background:#35383e}
+#status{color:#a7c6ff}.badge{background:#292722;color:#e0be6a}
+.card{background:#202225;border-color:#383b40}.card b{color:#bdc3ce}.card strong{color:#9ebdff}.card.bear strong{color:#eea497}.card.bull strong{color:#84ccba}
+.table-wrap{background:transparent;border:0;border-radius:0;box-shadow:none}table{background:transparent;border-spacing:0}
+th,td{border-bottom-color:#424449}td,td:nth-child(2){background:#2b2d31;color:#eceef2;border-right:1px solid #45474b}
+th:first-child,.assumption th:first-child,.result th:first-child{background:#fff;color:#29313b;border-bottom-color:#d7d9dd}
+thead th,table[data-scenario] thead th{background:#303237;color:#f3f4f6}thead th:first-child,table[data-scenario] thead th:first-child{background:#fff;color:#29313b}
+td input,td:nth-child(2) input{background:#373c45;color:#e0ebff;border-color:#66758b}
+.fill{background:#e9edf3;color:#40526c}.fill:hover{background:#d5dfef}
+.section-row th:first-child{background:#000;color:#c1a56b;border:0;border-top:18px solid #000;padding:5px 16px 12px}
+.result td,.result td:nth-child(2){background:linear-gradient(110deg,#b78625,#d4ad50);color:#211b0b;border-color:#9b772e;font-weight:700}
+.result td.negative{color:#69202b}
+input[type="number"]{appearance:textfield;-moz-appearance:textfield}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+
+/* Separate the metric labels from the data without covering the black canvas. */
+#projection tr:not(.section-row)>:nth-child(2){border-left:14px solid transparent;background-clip:padding-box}
+#projection thead th:first-child{border-radius:10px}
+#projection thead th:nth-child(2){border-top-left-radius:10px;border-bottom-left-radius:10px}
+#projection thead th:last-child{border-radius:0 10px 10px 0}
+#projection .section-row+tr>th{border-top-left-radius:10px;border-top-right-radius:10px}
+#projection .section-row+tr>td:nth-child(2){border-top-left-radius:10px}
+#projection .section-row+tr>td:last-child{border-top-right-radius:10px}
+#projection tr:has(+.section-row)>th,#projection tbody tr:last-child>th{border-bottom-left-radius:10px;border-bottom-right-radius:10px}
+#projection tr:has(+.section-row)>td:nth-child(2),#projection tbody tr:last-child>td:nth-child(2){border-bottom-left-radius:10px}
+#projection tr:has(+.section-row)>td:last-child,#projection tbody tr:last-child>td:last-child{border-bottom-right-radius:10px}
+
+/* Inputs occupy their cell, with an inset focus ring for keyboard navigation. */
+#projection tr:not(.section-row)>th{height:42px}
+#projection td:has(input){position:relative;padding:0;overflow:hidden;background-color:#373c45}
+#projection td input{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;margin:0;padding:10px 16px;border:0;border-radius:0;background:transparent;box-shadow:none}
+#projection td input:focus-visible{outline:2px solid #91b8ff;outline-offset:-3px;background:#414b5c}
+
+#projection[data-scenario="bear"] thead th:first-child{background:#b52f3a;color:#fff}
+#projection[data-scenario="base"] thead th:first-child{background:#295bc5;color:#fff}
+#projection[data-scenario="bull"] thead th:first-child{background:#21815c;color:#fff}
+.card b{display:inline-block;padding:7px 10px;border-radius:5px;color:#fff}
+.card.bear b{background:#b52f3a}.card.base b{background:#295bc5}.card.bull b{background:#21815c}
+#projection .section-row th{font-weight:800;font-size:.7rem}
+@media(max-width:600px){#projection tr:not(.section-row)>:nth-child(2){border-left-width:10px}#projection td input{padding:9px 10px}}
+/* Include the transparent gutter in the data block's corner radius. */
+#projection thead th:nth-child(2){border-top-left-radius:24px 10px;border-bottom-left-radius:24px 10px}
+#projection .section-row+tr>td:nth-child(2){border-top-left-radius:24px 10px}
+#projection tr:has(+.section-row)>td:nth-child(2),#projection tbody tr:last-child>td:nth-child(2){border-bottom-left-radius:24px 10px}

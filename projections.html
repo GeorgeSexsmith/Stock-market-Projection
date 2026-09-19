@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Stock Scenario Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<main>
+  <header class="page-header">
+    <div><p class="eyebrow">STOCK PROJECTIONS</p><h1>A clearer view of what’s next.</h1><p>Explore growth, earnings, and valuation across three scenarios.</p></div>
+    <form id="search-form" class="toolbar">
+      <label>Ticker <input id="ticker" placeholder="AAPL" maxlength="15" required pattern="[A-Za-z0-9.^-]+"></label>
+      <button id="search-button" class="primary">Load financials</button>
+      <button type="button" id="demo">Demo</button>
+    </form>
+  </header>
+  <p id="status" role="status" aria-live="polite"></p>
+  <div class="company-heading"><h2 id="company"></h2><span class="badge">4-YEAR OUTLOOK</span></div>
+  <p id="source"></p>
+  <p id="validation" role="alert"></p>
+  <section id="cards" class="cards" aria-label="Four-year comparison"></section>
+  <div class="toolbar">
+    <label>Scenario <select id="scenario"><option value="bear">Bear case</option><option value="base" selected>Base case</option><option value="bull">Bull case</option></select></label>
+    <button id="copy">Copy base case</button>
+    <button id="reset">Reset case</button>
+    <button id="save">Save model</button>
+    <button id="export">Export CSV</button>
+  </div>
+  <div class="sheet-guide"><span><i></i> Blue cells are editable · amounts in millions, except per-share values</span><span>Fill → applies the first forecast across all years</span></div>
+  <div class="table-wrap"><table id="projection"></table></div>
+  <p class="footnote">Latest annual financials are the starting baseline. Calendar labels show forecast horizons from today. Returns exclude dividends; presets are illustrative.</p>
+</main>
+</body>
+</html>
